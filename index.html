@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Xinn Owner Panel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="splashScreen" class="splash-screen">
+    <div class="splash-orb"></div>
+    <div class="splash-ring"></div>
+    <div class="splash-title">OWNER XINN</div>
+    <div class="splash-subtitle">Loading mobile dashboard...</div>
+  </div>
+
+  <section id="loginPage" class="login-page active-page">
+    <div class="login-bg"></div>
+    <div class="login-card">
+      <div class="login-ring">
+        <div class="login-avatar"></div>
+      </div>
+      <h1>OWNER XINN</h1>
+      <p class="login-text">Masuk ke dashboard neon premium</p>
+
+      <form id="loginForm" class="login-form">
+        <label class="field-label">Username</label>
+        <input class="field-input" id="username" type="text" placeholder="Masukkan username" value="xinn" required>
+
+        <label class="field-label">Password</label>
+        <input class="field-input" id="password" type="password" placeholder="Masukkan password" value="ownerxinn" required>
+
+        <button class="primary-btn" type="submit">LOGIN PANEL</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="appPage" class="app-page">
+    <div class="stars"></div>
+
+    <div class="mobile-shell">
+      <header class="topbar">
+        <button class="topbar-btn" aria-label="Menu">☰</button>
+        <div class="topbar-title">Xinn Owner Panel</div>
+        <button class="topbar-btn" id="musicToggle" aria-label="Sound">🔊</button>
+      </header>
+
+      <main id="homeTab" class="tab-page active-tab">
+        <section class="profile-card glass-card">
+          <div class="profile-header">
+            <div class="avatar-wrap">
+              <div class="avatar-gif"></div>
+            </div>
+            <div class="profile-text">
+              <div class="profile-name">OWNER XINN</div>
+              <div class="tag-row">
+                <span class="tag tag-primary">OWNER</span>
+                <span class="tag tag-dark">EXP 2030</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="banner-wrap">
+            <div class="banner-gif">
+              <div class="banner-overlay"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="glass-card update-card">
+          <div class="update-title">🔥 The New Update v1.0</div>
+          <div class="update-desc">Tema neon ungu baru, halaman login, avatar animasi, banner animasi, dan bottom navigation ala mobile app.</div>
+        </section>
+
+        <section class="glass-card info-card">
+          <h3 class="section-title">Account Information</h3>
+
+          <div class="info-row"><span>Username</span><strong>XINN</strong></div>
+          <div class="info-row"><span>Role</span><strong class="ok">OWNER</strong></div>
+          <div class="info-row"><span>Server</span><strong class="ok">ONLINE</strong></div>
+          <div class="info-row"><span>Expired</span><strong>2030-01-01</strong></div>
+          <div class="info-row"><span>Sending</span><strong>6</strong></div>
+          <div class="info-row"><span>Sender</span><strong>1</strong></div>
+        </section>
+      </main>
+
+      <main id="whatsappTab" class="tab-page">
+        <section class="profile-mini">
+          <div class="mini-ring"></div>
+          <div class="mini-name">OWNER XINN</div>
+          <div class="tag-row center">
+            <span class="tag tag-primary">OWNER</span>
+            <span class="tag tag-dark">EXP: 2030-01-01</span>
+          </div>
+        </section>
+
+        <section class="wa-banner glass-card">
+          <div class="wa-banner-art"></div>
+        </section>
+
+        <section class="glass-card form-card">
+          <label class="form-label">📱 Target Number</label>
+          <input class="field-input" type="text" placeholder="Contoh: 628xxxxxx" />
+
+          <label class="form-label">🧩 Type Menu</label>
+          <select class="field-input">
+            <option>Quick WhatsApp</option>
+            <option>Message Panel</option>
+            <option>Sender Preview</option>
+          </select>
+
+          <button class="primary-btn submit-btn" type="button">OPEN WHATSAPP</button>
+          <p class="safe-note">UI demo saja. Tidak ada fitur spam, crash, atau aksi berbahaya.</p>
+        </section>
+      </main>
+
+      <main id="toolsTab" class="tab-page">
+        <section class="glass-card tools-card">
+          <h3 class="section-title big-title">SENDER MANAGER</h3>
+          <p class="section-sub">Kelola nomor sender Anda untuk tampilan dashboard.</p>
+
+          <label class="form-label">➕ Tambah Nomor Sender</label>
+          <input class="field-input" type="text" placeholder="Masukkan Nomor Sender (hanya angka)" />
+          <button class="primary-btn submit-btn" type="button">TAMBAH SENDER</button>
+        </section>
+
+        <section class="glass-card tools-card">
+          <h3 class="section-title big-title">SENDER LIST</h3>
+          <p class="section-sub">Daftar nomor sender aktif (max: 1)</p>
+
+          <div class="sender-row">
+            <div class="sender-icon">📱</div>
+            <div class="sender-meta">
+              <div class="sender-label">Sender Aktif:</div>
+              <div class="sender-value">6283848150569</div>
+            </div>
+            <div class="sender-age">23j<br>44m</div>
+          </div>
+        </section>
+
+        <section class="music-header">
+          <div class="music-title">⬇ Music Audio</div>
+          <div class="music-sub">Listen to the music you like</div>
+        </section>
+
+        <section class="glass-card spotify-card">
+          <div class="spotify-icon">♫</div>
+          <div class="spotify-name">Spotify Music</div>
+          <div class="spotify-sub">Neon audio widget style</div>
+        </section>
+      </main>
+
+      <nav class="bottom-nav">
+        <button class="nav-btn active" data-tab="homeTab">
+          <span class="nav-icon">⌂</span>
+          <span class="nav-text">Home</span>
+        </button>
+        <button class="nav-btn" data-tab="whatsappTab">
+          <span class="nav-icon">◎</span>
+          <span class="nav-text">WhatsApp</span>
+        </button>
+        <button class="nav-btn" data-tab="toolsTab">
+          <span class="nav-icon">✕</span>
+          <span class="nav-text">Tools</span>
+        </button>
+      </nav>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
